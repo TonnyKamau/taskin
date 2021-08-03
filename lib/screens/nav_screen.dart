@@ -24,6 +24,7 @@ class _NavScreenState extends State<NavScreen> {
     return DefaultTabController(
       length: _icons.length,
       child: Scaffold(
+        
         body: IndexedStack(
           index: _selectedIndex,
           children: _screens,
@@ -33,6 +34,7 @@ class _NavScreenState extends State<NavScreen> {
           children: _screens,
           ), */
         bottomNavigationBar: Padding(
+          
           padding: const EdgeInsets.only(bottom: 12.0),
           child: CustomTabBar(
               icons: _icons,
