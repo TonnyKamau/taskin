@@ -49,6 +49,15 @@ class _NavScreenState extends State<NavScreen> {
         selectedItemColor: Colors.white,
         onTap: _onItemTapped,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => AddTasks()));
+        },
+        child: const Icon(Icons.add
+        ),
+        backgroundColor: Colors.orange[700],
+      ),
     );
   }
 }
