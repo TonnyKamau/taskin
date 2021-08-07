@@ -43,20 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ],
     );
-    /* SliverStickyHeader(
-      header: Container(
-        height: 60.0,
-        color: Colors.lightBlue,
-        padding: EdgeInsets.symmetric(horizontal: 16.0),
-        alignment: Alignment.centerLeft,
-        child: Text(
-          'Header #0',
-          style: const TextStyle(color: Colors.white),
-        ),
-      ),
-      
-    ); */
-
+    
   }
 }
 
