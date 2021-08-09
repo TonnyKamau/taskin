@@ -30,7 +30,7 @@ class _NavScreenState extends State<NavScreen> {
         children: _screens,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.orange[700],
+        backgroundColor: Colors.amber[800],
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.check_circle_outline_rounded),
@@ -47,6 +47,7 @@ class _NavScreenState extends State<NavScreen> {
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white,
         onTap: _onItemTapped,
       ),
       floatingActionButton: FloatingActionButton(
@@ -54,9 +55,10 @@ class _NavScreenState extends State<NavScreen> {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => AddTasks()));
         },
-        child: const Icon(Icons.add
+        child: const Icon(Icons.add,
+        color: Colors.white,
         ),
-        backgroundColor: Colors.orange[700],
+        backgroundColor: Colors.amber[800],
       ),
     );
   }
