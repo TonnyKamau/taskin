@@ -27,6 +27,7 @@ dependencies:
   numberpicker: ^2.1.1
   
   
+  
 
 
 
@@ -34,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.3
   material_design_icons_flutter: ^4.0.5955
+  curved_navigation_bar: ^1.0.1
 
 dev_dependencies:
   flutter_test:

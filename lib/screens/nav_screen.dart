@@ -55,8 +55,9 @@ class _NavScreenState extends State<NavScreen> {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => AddTasks()));
         },
-        child: const Icon(Icons.add,
-        color: Colors.white,
+        child: const Icon(
+          Icons.add,
+          color: Colors.white,
         ),
         backgroundColor: Colors.amber[800],
       ),

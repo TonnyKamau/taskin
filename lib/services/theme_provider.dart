@@ -11,15 +11,16 @@ class ThemeProvider extends ChangeNotifier {
 }
 
 class MyThemes {
+  static final primary = Colors.amber.shade800;
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
-    colorScheme: ColorScheme.light(),
+    colorScheme: ColorScheme.light(primary: primary),
     primaryColor: Colors.white,
     
   );
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: Colors.grey[900],
-    colorScheme: ColorScheme.dark(),
+    colorScheme: ColorScheme.dark(primary: primary),
     primaryColor: Colors.grey[900],
  
   );

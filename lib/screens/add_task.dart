@@ -43,6 +43,7 @@ class _AddTasksState extends State<AddTasks> {
                       bottomLeft: Radius.circular(10.0),
                       bottomRight: Radius.circular(10.0)),
                   child: TextFormField(
+                    cursorColor: Theme.of(context).colorScheme.primary,
                     decoration: InputDecoration(
                         hintText: 'Example: Wake Up',
                         border: OutlineInputBorder(borderSide: BorderSide.none),
@@ -163,7 +164,8 @@ class _AddTasksState extends State<AddTasks> {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color:Colors.amber.shade800,width: 2.0),
+                            borderSide: BorderSide(
+                                color: Colors.amber.shade800, width: 2.0),
                             borderRadius: BorderRadius.circular(20.0)),
                         contentPadding: const EdgeInsets.all(15.0)),
                   ),
@@ -185,7 +187,8 @@ class _AddTasksState extends State<AddTasks> {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color:Colors.amber.shade800,width: 2.0),
+                            borderSide: BorderSide(
+                                color: Colors.amber.shade800, width: 2.0),
                             borderRadius: BorderRadius.circular(20.0)),
                         contentPadding: const EdgeInsets.all(15.0)),
                   ),
