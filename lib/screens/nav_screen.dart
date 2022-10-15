@@ -30,19 +30,15 @@ class _NavScreenState extends State<NavScreen> {
         children: _screens,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.amber[800],
+        backgroundColor: Colors.deepOrange[500],
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.check_circle_outline_rounded),
-            label: 'Tasks',
+            icon: Icon(Icons.task),
+            label: 'Inprogress',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today_outlined),
-            label: 'Calender',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined),
-            label: 'Settings',
+            icon: Icon(Icons.done_all_outlined),
+            label: 'Completed',
           ),
         ],
         currentIndex: _selectedIndex,
@@ -59,7 +55,7 @@ class _NavScreenState extends State<NavScreen> {
           Icons.add,
           color: Colors.white,
         ),
-        backgroundColor: Colors.amber[800],
+        backgroundColor: Colors.deepOrange[600],
       ),
     );
   }
