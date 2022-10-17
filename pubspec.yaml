@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.3
   material_design_icons_flutter: ^4.0.5955
   curved_navigation_bar: ^1.0.1
+  hive_flutter: ^0.3.1
 
 dev_dependencies:
   flutter_test:
