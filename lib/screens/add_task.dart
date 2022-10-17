@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:numberpicker/numberpicker.dart';
 import 'package:taskin/TimePicker/am_pm.dart';
 import 'package:taskin/TimePicker/hours.dart';
 import 'package:taskin/TimePicker/minutes.dart';
@@ -26,9 +25,12 @@ class _AddTasksState extends State<AddTasks> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 0,
-        actions: [ChangeThemeButtonWidget()],
-      ),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          actions: [ChangeThemeButtonWidget()],
+          leading: BackButton(
+            color: Theme.of(context).colorScheme.primary,
+          )),
       body: SingleChildScrollView(
         child: Form(
           child: Column(
@@ -194,6 +196,22 @@ class _AddTasksState extends State<AddTasks> {
                                 color: Colors.amber.shade800, width: 2.0),
                             borderRadius: BorderRadius.circular(20.0)),
                         contentPadding: const EdgeInsets.all(15.0)),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0.0, 50.0, 0.0, 0.0),
+                child: Center(
+                  child: FloatingActionButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => AddTasks()));
+                    },
+                    child: const Icon(
+                      Icons.add,
+                      color: Colors.white,
+                    ),
+                    backgroundColor: Colors.amber[800],
                   ),
                 ),
               ),

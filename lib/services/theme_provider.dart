@@ -11,7 +11,7 @@ class ThemeProvider extends ChangeNotifier {
 }
 
 class MyThemes {
-  static final primary = Colors.deepOrange.shade500;
+  static final primary = Colors.amber.shade800;
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     colorScheme: ColorScheme.light(primary: primary),

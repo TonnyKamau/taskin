@@ -30,7 +30,7 @@ class _NavScreenState extends State<NavScreen> {
         children: _screens,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.deepOrange[500],
+        backgroundColor: Colors.amber[800],
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.task),
@@ -55,7 +55,7 @@ class _NavScreenState extends State<NavScreen> {
           Icons.add,
           color: Colors.white,
         ),
-        backgroundColor: Colors.deepOrange[600],
+        backgroundColor: Colors.amber[800],
       ),
     );
   }

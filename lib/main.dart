@@ -22,33 +22,9 @@ class MyApp extends StatelessWidget {
             theme: MyThemes.lightTheme,
             darkTheme: MyThemes.darkTheme,
             home: Scaffold(
-              appBar: AppBar(
-                actions: [
-                  ChangeThemeButtonWidget(),
-                ],
-                elevation: 0,
-              ),
+              
               body: NavScreen(),
-              drawer: Drawer(
-                child: ListView(
-                  padding:EdgeInsets.zero,
-                  children: [
-                  SizedBox(
-                    child: DrawerHeader(
-                      child: Text(
-                        'taskin',
-                        style: const TextStyle(
-                          fontSize: 29.0,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: -1.3,
-                        ),
-                      ),
-                     
-                    ),
-                  ),
-                  ListTile()
-                ]),
-              ),
+             
             ),
           );
         },
