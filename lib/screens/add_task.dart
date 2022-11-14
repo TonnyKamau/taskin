@@ -27,7 +27,6 @@ class _AddTasksState extends State<AddTasks> {
       appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          actions: [ChangeThemeButtonWidget()],
           leading: BackButton(
             color: Theme.of(context).colorScheme.primary,
           )),
